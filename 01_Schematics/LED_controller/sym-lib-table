@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name extras)(type Legacy)(uri /home/werwolf/Projects/02-Smarthome/07_UD_LED_controller/01_Schematics/LED_controller/extras.lib)(options "")(descr ""))
+)

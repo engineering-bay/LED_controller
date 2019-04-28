@@ -20,9 +20,9 @@ U 1 1 5BC5F28F
 P 2700 1850
 F 0 "J8" H 2620 2067 50  0000 C CNN
 F 1 "TB-02" H 2620 1976 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2700 1850 50  0001 C CNN
+F 2 "extras:TB-02_metric" H 2700 1850 50  0001 C CNN
 F 3 "~" H 2700 1850 50  0001 C CNN
-F 4 "TB-02" H 2700 1850 50  0001 C CNN "partnum"
+F 4 "300-021-12" H 2700 1850 50  0001 C CNN "partnum"
 	1    2700 1850
 	-1   0    0    -1  
 $EndComp
@@ -136,9 +136,9 @@ U 1 1 5BC4F47A
 P 2700 3000
 F 0 "J11" H 2620 3217 50  0000 C CNN
 F 1 "TB-02" H 2620 3126 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 2700 3000 50  0001 C CNN
+F 2 "extras:TB-02_metric" H 2700 3000 50  0001 C CNN
 F 3 "~" H 2700 3000 50  0001 C CNN
-F 4 "TB-02" H 2700 3000 50  0001 C CNN "partnum"
+F 4 "300-021-12" H 2700 3000 50  0001 C CNN "partnum"
 	1    2700 3000
 	-1   0    0    -1  
 $EndComp
@@ -224,9 +224,9 @@ U 1 1 5C2DFFB1
 P 4700 1850
 F 0 "J9" H 4620 2167 50  0000 C CNN
 F 1 "TB-03" H 4620 2076 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4700 1850 50  0001 C CNN
+F 2 "extras:TB-03_metric" H 4700 1850 50  0001 C CNN
 F 3 "~" H 4700 1850 50  0001 C CNN
-F 4 "TB-03" H 4700 1850 50  0001 C CNN "partnum"
+F 4 "300-031-12" H 4700 1850 50  0001 C CNN "partnum"
 	1    4700 1850
 	-1   0    0    -1  
 $EndComp
@@ -236,9 +236,9 @@ U 1 1 5C2ED957
 P 6700 1850
 F 0 "J10" H 6620 2067 50  0000 C CNN
 F 1 "TB-02" H 6620 1976 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6700 1850 50  0001 C CNN
+F 2 "extras:TB-02_metric" H 6700 1850 50  0001 C CNN
 F 3 "~" H 6700 1850 50  0001 C CNN
-F 4 "TB-02" H 6700 1850 50  0001 C CNN "partnum"
+F 4 "300-021-12" H 6700 1850 50  0001 C CNN "partnum"
 	1    6700 1850
 	-1   0    0    -1  
 $EndComp
@@ -310,9 +310,9 @@ U 1 1 5C2ED982
 P 6700 3000
 F 0 "J13" H 6620 3217 50  0000 C CNN
 F 1 "TB-02" H 6620 3126 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6700 3000 50  0001 C CNN
+F 2 "extras:TB-02_metric" H 6700 3000 50  0001 C CNN
 F 3 "~" H 6700 3000 50  0001 C CNN
-F 4 "TB-02" H 6700 3000 50  0001 C CNN "partnum"
+F 4 "300-021-12" H 6700 3000 50  0001 C CNN "partnum"
 	1    6700 3000
 	-1   0    0    -1  
 $EndComp
@@ -457,7 +457,7 @@ F 3 "" H 5300 3400 50  0001 C CNN
 	1    5300 3400
 	1    0    0    -1  
 $EndComp
-Text Label 5450 3000 0    50   ~ 0
+Text Label 5400 3000 0    50   ~ 0
 light_in
 Connection ~ 5300 3000
 Wire Wire Line
@@ -474,14 +474,14 @@ U 1 1 5C34F743
 P 4700 3000
 F 0 "J12" H 4620 3317 50  0000 C CNN
 F 1 "TB-03" H 4620 3226 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 4700 3000 50  0001 C CNN
+F 2 "extras:TB-03_metric" H 4700 3000 50  0001 C CNN
 F 3 "~" H 4700 3000 50  0001 C CNN
-F 4 "TB-03" H 4700 3000 50  0001 C CNN "partnum"
+F 4 "300-031-12" H 4700 3000 50  0001 C CNN "partnum"
 	1    4700 3000
 	-1   0    0    -1  
 $EndComp
 Text GLabel 5750 3000 2    50   Input ~ 0
-prox_in
+light_in
 Wire Wire Line
 	5750 3000 5300 3000
 $Comp
@@ -542,4 +542,121 @@ F 4 "MF-MSMF010" V 5250 2650 50  0001 C CNN "partnum"
 	1    5250 2650
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J67
+U 1 1 5C9A78A8
+P 2700 4200
+F 0 "J67" H 2620 4417 50  0000 C CNN
+F 1 "TB-02" H 2620 4326 50  0000 C CNN
+F 2 "extras:TB-02_metric" H 2700 4200 50  0001 C CNN
+F 3 "~" H 2700 4200 50  0001 C CNN
+F 4 "300-021-12" H 2700 4200 50  0001 C CNN "partnum"
+	1    2700 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L extras:V23092-A1012-A301 K1
+U 1 1 5C9AB6C0
+P 3650 4150
+F 0 "K1" H 3800 4315 50  0000 C CNN
+F 1 "V23092-A1012-A301" H 3800 4224 50  0000 C CNN
+F 2 "extras:Relay_TE_V23092" H 3850 4200 50  0001 C CNN
+F 3 "" H 3850 4200 50  0001 C CNN
+	1    3650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4300 3550 4300
+Wire Wire Line
+	4050 4350 4300 4350
+Wire Wire Line
+	4300 4350 4300 3900
+Wire Wire Line
+	4300 3900 3150 3900
+Wire Wire Line
+	3150 3900 3150 4200
+Wire Wire Line
+	3150 4200 2900 4200
+Text Label 3200 4300 0    50   ~ 0
+RL_CO
+Text Label 3250 3900 0    50   ~ 0
+RL_NO
+Text GLabel 2900 4550 0    50   Input ~ 0
++12V
+Wire Wire Line
+	2900 4550 3400 4550
+$Comp
+L Transistor_FET:MMBF170 Q1
+U 1 1 5C9B738A
+P 4200 5150
+F 0 "Q1" H 4405 5196 50  0000 L CNN
+F 1 "MMBF170" H 4405 5105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 5075 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 4200 5150 50  0001 L CNN
+	1    4200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR032
+U 1 1 5C9B748A
+P 4300 5450
+F 0 "#PWR032" H 4300 5200 50  0001 C CNN
+F 1 "GNDD" H 4304 5295 50  0000 C CNN
+F 2 "" H 4300 5450 50  0001 C CNN
+F 3 "" H 4300 5450 50  0001 C CNN
+	1    4300 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5350 4300 5450
+Wire Wire Line
+	4050 4550 4300 4550
+$Comp
+L Device:R_Small R?
+U 1 1 5C9C4164
+P 3600 5150
+AR Path="/5BC4A73F/5C9C4164" Ref="R?"  Part="1" 
+AR Path="/5C0A4430/5C9C4164" Ref="R?"  Part="1" 
+AR Path="/5BC5F278/5C9C4164" Ref="R74"  Part="1" 
+F 0 "R74" H 3659 5196 50  0000 L CNN
+F 1 "330" H 3659 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 5150 50  0001 C CNN
+F 3 "~" H 3600 5150 50  0001 C CNN
+F 4 "RC0805FR-07330RL" H 3600 5150 50  0001 C CNN "partnum"
+	1    3600 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 5150 4000 5150
+Text GLabel 2900 5150 0    50   Input ~ 0
+aux_ctrl
+Wire Wire Line
+	2900 5150 3500 5150
+Text Label 3000 5150 0    50   ~ 0
+aux_ctrl
+$Comp
+L Diode:B240 D16
+U 1 1 5C9CEDC0
+P 3800 4900
+F 0 "D16" H 3800 5116 50  0000 C CNN
+F 1 "B240" H 3800 5025 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 3800 4725 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 3800 4900 50  0001 C CNN
+	1    3800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4900 3400 4900
+Wire Wire Line
+	3400 4900 3400 4550
+Connection ~ 3400 4550
+Wire Wire Line
+	3400 4550 3550 4550
+Wire Wire Line
+	3950 4900 4300 4900
+Wire Wire Line
+	4300 4550 4300 4900
+Connection ~ 4300 4900
+Wire Wire Line
+	4300 4900 4300 4950
 $EndSCHEMATC

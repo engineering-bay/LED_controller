@@ -65,7 +65,7 @@ AR Path="/5C19730B" Ref="L?"  Part="1"
 AR Path="/5C0A300C/5C19730B" Ref="L2"  Part="1" 
 F 0 "L2" V 4390 2600 50  0000 C CNN
 F 1 "68uH" V 4299 2600 50  0000 C CNN
-F 2 "Inductor_SMD:L_Bourns-SRR1005" H 4200 2600 50  0001 C CNN
+F 2 "extras:L_Bourns-SRR1005" H 4200 2600 50  0001 C CNN
 F 3 "~" H 4200 2600 50  0001 C CNN
 	1    4200 2600
 	0    -1   -1   0   
@@ -86,20 +86,6 @@ F 3 "" H 2200 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 2600 4050 2600
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5C19731A
-P 5200 2250
-AR Path="/5C19731A" Ref="J?"  Part="1" 
-AR Path="/5C0A300C/5C19731A" Ref="J20"  Part="1" 
-F 0 "J20" H 5280 2242 50  0000 L CNN
-F 1 "TB-02" H 5280 2151 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5200 2250 50  0001 C CNN
-F 3 "~" H 5200 2250 50  0001 C CNN
-F 4 "TB-02" H 5200 2250 50  0001 C CNN "partnum"
-	1    5200 2250
-	1    0    0    -1  
-$EndComp
 Text Label 1750 2600 0    50   ~ 0
 PWM1
 Text Label 4550 2600 0    50   ~ 0
@@ -253,21 +239,6 @@ F 4 "293D106X9035D2TE3" H 4450 2200 50  0001 C CNN "partnum"
 $EndComp
 Wire Wire Line
 	2200 2300 2200 2350
-$Comp
-L power:GND #PWR?
-U 1 1 5C19737D
-P 4450 2350
-AR Path="/5C19737D" Ref="#PWR?"  Part="1" 
-AR Path="/5C0A300C/5C19737D" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 4450 2100 50  0001 C CNN
-F 1 "GND" H 4455 2177 50  0000 C CNN
-F 2 "" H 4450 2350 50  0001 C CNN
-F 3 "" H 4450 2350 50  0001 C CNN
-	1    4450 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 2300 4450 2350
 Wire Wire Line
 	3650 2050 4200 2050
 Wire Wire Line
@@ -445,23 +416,7 @@ $EndComp
 Text Label 4550 2050 0    50   ~ 0
 LED1+
 Wire Wire Line
-	4450 2050 4950 2050
-Wire Wire Line
-	4350 2600 4950 2600
-Wire Wire Line
-	5000 2250 4950 2250
-Wire Wire Line
-	4950 2250 4950 2050
-Connection ~ 4950 2050
-Wire Wire Line
-	4950 2050 5000 2050
-Wire Wire Line
-	5000 2350 4950 2350
-Wire Wire Line
-	4950 2350 4950 2600
-Connection ~ 4950 2600
-Wire Wire Line
-	4950 2600 5000 2600
+	4350 2600 4450 2600
 $Comp
 L extras:MBI6651GSD U?
 U 1 1 5C197403
@@ -470,7 +425,7 @@ AR Path="/5C197403" Ref="U?"  Part="1"
 AR Path="/5C0A300C/5C197403" Ref="U3"  Part="1" 
 F 0 "U3" H 3200 2465 50  0000 C CNN
 F 1 "MBI6651GSD" H 3200 2374 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-5_TabPin6" H 3350 2350 50  0001 C CNN
+F 2 "extras:TO-252-5L" H 3350 2350 50  0001 C CNN
 F 3 "" H 3350 2350 50  0001 C CNN
 F 4 "MBI6651GSD-A" H 2950 2300 50  0001 C CNN "partnum"
 	1    2950 2300
@@ -529,7 +484,7 @@ AR Path="/5C19D100" Ref="L?"  Part="1"
 AR Path="/5C0A300C/5C19D100" Ref="L3"  Part="1" 
 F 0 "L3" V 9190 2600 50  0000 C CNN
 F 1 "68uH" V 9099 2600 50  0000 C CNN
-F 2 "Inductor_SMD:L_Bourns-SRR1005" H 9000 2600 50  0001 C CNN
+F 2 "extras:L_Bourns-SRR1005" H 9000 2600 50  0001 C CNN
 F 3 "~" H 9000 2600 50  0001 C CNN
 	1    9000 2600
 	0    -1   -1   0   
@@ -550,20 +505,6 @@ F 3 "" H 7000 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8650 2600 8850 2600
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5C19D10F
-P 10000 2250
-AR Path="/5C19D10F" Ref="J?"  Part="1" 
-AR Path="/5C0A300C/5C19D10F" Ref="J21"  Part="1" 
-F 0 "J21" H 10080 2242 50  0000 L CNN
-F 1 "TB-02" H 10080 2151 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10000 2250 50  0001 C CNN
-F 3 "~" H 10000 2250 50  0001 C CNN
-F 4 "TB-02" H 10000 2250 50  0001 C CNN "partnum"
-	1    10000 2250
-	1    0    0    -1  
-$EndComp
 Text Label 6500 2600 0    50   ~ 0
 PWM2
 Text Label 9350 2600 0    50   ~ 0
@@ -646,21 +587,6 @@ F 4 "293D106X9035D2TE3" H 9250 2200 50  0001 C CNN "partnum"
 $EndComp
 Wire Wire Line
 	7000 2300 7000 2350
-$Comp
-L power:GND #PWR?
-U 1 1 5C19D172
-P 9250 2350
-AR Path="/5C19D172" Ref="#PWR?"  Part="1" 
-AR Path="/5C0A300C/5C19D172" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 9250 2100 50  0001 C CNN
-F 1 "GND" H 9255 2177 50  0000 C CNN
-F 2 "" H 9250 2350 50  0001 C CNN
-F 3 "" H 9250 2350 50  0001 C CNN
-	1    9250 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 2300 9250 2350
 Wire Wire Line
 	7000 2100 7000 2050
 Connection ~ 7000 2050
@@ -724,23 +650,7 @@ $EndComp
 Text Label 9350 2050 0    50   ~ 0
 LED2+
 Wire Wire Line
-	9250 2050 9750 2050
-Wire Wire Line
-	9150 2600 9750 2600
-Wire Wire Line
-	9800 2250 9750 2250
-Wire Wire Line
-	9750 2250 9750 2050
-Connection ~ 9750 2050
-Wire Wire Line
-	9750 2050 9800 2050
-Wire Wire Line
-	9800 2350 9750 2350
-Wire Wire Line
-	9750 2350 9750 2600
-Connection ~ 9750 2600
-Wire Wire Line
-	9750 2600 9800 2600
+	9150 2600 9250 2600
 $Comp
 L extras:MBI6651GSD U?
 U 1 1 5C19D1F8
@@ -749,7 +659,7 @@ AR Path="/5C19D1F8" Ref="U?"  Part="1"
 AR Path="/5C0A300C/5C19D1F8" Ref="U4"  Part="1" 
 F 0 "U4" H 8000 2465 50  0000 C CNN
 F 1 "MBI6651GSD" H 8000 2374 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-5_TabPin6" H 8150 2350 50  0001 C CNN
+F 2 "extras:TO-252-5L" H 8150 2350 50  0001 C CNN
 F 3 "" H 8150 2350 50  0001 C CNN
 F 4 "MBI6651GSD-A" H 7750 2300 50  0001 C CNN "partnum"
 	1    7750 2300
@@ -808,7 +718,7 @@ AR Path="/5C1ACD68" Ref="L?"  Part="1"
 AR Path="/5C0A300C/5C1ACD68" Ref="L4"  Part="1" 
 F 0 "L4" V 4390 5200 50  0000 C CNN
 F 1 "68uH" V 4299 5200 50  0000 C CNN
-F 2 "Inductor_SMD:L_Bourns-SRR1005" H 4200 5200 50  0001 C CNN
+F 2 "extras:L_Bourns-SRR1005" H 4200 5200 50  0001 C CNN
 F 3 "~" H 4200 5200 50  0001 C CNN
 	1    4200 5200
 	0    -1   -1   0   
@@ -829,20 +739,6 @@ F 3 "" H 2200 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 5200 4050 5200
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5C1ACD77
-P 5200 4850
-AR Path="/5C1ACD77" Ref="J?"  Part="1" 
-AR Path="/5C0A300C/5C1ACD77" Ref="J34"  Part="1" 
-F 0 "J34" H 5280 4842 50  0000 L CNN
-F 1 "TB-02" H 5280 4751 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5200 4850 50  0001 C CNN
-F 3 "~" H 5200 4850 50  0001 C CNN
-F 4 "TB-02" H 5200 4850 50  0001 C CNN "partnum"
-	1    5200 4850
-	1    0    0    -1  
-$EndComp
 Text Label 1700 5200 0    50   ~ 0
 PWM3
 Text Label 4550 5200 0    50   ~ 0
@@ -925,21 +821,6 @@ F 4 "293D106X9035D2TE3" H 4450 4800 50  0001 C CNN "partnum"
 $EndComp
 Wire Wire Line
 	2200 4900 2200 4950
-$Comp
-L power:GND #PWR?
-U 1 1 5C1ACDDA
-P 4450 4950
-AR Path="/5C1ACDDA" Ref="#PWR?"  Part="1" 
-AR Path="/5C0A300C/5C1ACDDA" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 4450 4700 50  0001 C CNN
-F 1 "GND" H 4455 4777 50  0000 C CNN
-F 2 "" H 4450 4950 50  0001 C CNN
-F 3 "" H 4450 4950 50  0001 C CNN
-	1    4450 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4450 4900 4450 4950
 Wire Wire Line
 	2200 4700 2200 4650
 Connection ~ 2200 4650
@@ -1003,23 +884,7 @@ $EndComp
 Text Label 4550 4650 0    50   ~ 0
 LED3+
 Wire Wire Line
-	4450 4650 4950 4650
-Wire Wire Line
-	4350 5200 4950 5200
-Wire Wire Line
-	5000 4850 4950 4850
-Wire Wire Line
-	4950 4850 4950 4650
-Connection ~ 4950 4650
-Wire Wire Line
-	4950 4650 5000 4650
-Wire Wire Line
-	5000 4950 4950 4950
-Wire Wire Line
-	4950 4950 4950 5200
-Connection ~ 4950 5200
-Wire Wire Line
-	4950 5200 5000 5200
+	4350 5200 4450 5200
 $Comp
 L extras:MBI6651GSD U?
 U 1 1 5C1ACE60
@@ -1028,7 +893,7 @@ AR Path="/5C1ACE60" Ref="U?"  Part="1"
 AR Path="/5C0A300C/5C1ACE60" Ref="U5"  Part="1" 
 F 0 "U5" H 3200 5065 50  0000 C CNN
 F 1 "MBI6651GSD" H 3200 4974 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-5_TabPin6" H 3350 4950 50  0001 C CNN
+F 2 "extras:TO-252-5L" H 3350 4950 50  0001 C CNN
 F 3 "" H 3350 4950 50  0001 C CNN
 F 4 "MBI6651GSD-A" H 2950 4900 50  0001 C CNN "partnum"
 	1    2950 4900
@@ -1087,7 +952,7 @@ AR Path="/5C1ACE7E" Ref="L?"  Part="1"
 AR Path="/5C0A300C/5C1ACE7E" Ref="L5"  Part="1" 
 F 0 "L5" V 9190 5200 50  0000 C CNN
 F 1 "68uH" V 9099 5200 50  0000 C CNN
-F 2 "Inductor_SMD:L_Bourns-SRR1005" H 9000 5200 50  0001 C CNN
+F 2 "extras:L_Bourns-SRR1005" H 9000 5200 50  0001 C CNN
 F 3 "~" H 9000 5200 50  0001 C CNN
 	1    9000 5200
 	0    -1   -1   0   
@@ -1108,20 +973,6 @@ F 3 "" H 7000 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8650 5200 8850 5200
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5C1ACE8D
-P 10000 4850
-AR Path="/5C1ACE8D" Ref="J?"  Part="1" 
-AR Path="/5C0A300C/5C1ACE8D" Ref="J35"  Part="1" 
-F 0 "J35" H 10080 4842 50  0000 L CNN
-F 1 "TB-02" H 10080 4751 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10000 4850 50  0001 C CNN
-F 3 "~" H 10000 4850 50  0001 C CNN
-F 4 "TB-02" H 10000 4850 50  0001 C CNN "partnum"
-	1    10000 4850
-	1    0    0    -1  
-$EndComp
 Text Label 6550 5200 0    50   ~ 0
 PWM4
 Text Label 9350 5200 0    50   ~ 0
@@ -1204,21 +1055,6 @@ F 4 "293D106X9035D2TE3" H 9250 4800 50  0001 C CNN "partnum"
 $EndComp
 Wire Wire Line
 	7000 4900 7000 4950
-$Comp
-L power:GND #PWR?
-U 1 1 5C1ACEF0
-P 9250 4950
-AR Path="/5C1ACEF0" Ref="#PWR?"  Part="1" 
-AR Path="/5C0A300C/5C1ACEF0" Ref="#PWR042"  Part="1" 
-F 0 "#PWR042" H 9250 4700 50  0001 C CNN
-F 1 "GND" H 9255 4777 50  0000 C CNN
-F 2 "" H 9250 4950 50  0001 C CNN
-F 3 "" H 9250 4950 50  0001 C CNN
-	1    9250 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 4900 9250 4950
 Wire Wire Line
 	7000 4700 7000 4650
 Connection ~ 7000 4650
@@ -1282,23 +1118,7 @@ $EndComp
 Text Label 9350 4650 0    50   ~ 0
 LED4+
 Wire Wire Line
-	9250 4650 9750 4650
-Wire Wire Line
-	9150 5200 9750 5200
-Wire Wire Line
-	9800 4850 9750 4850
-Wire Wire Line
-	9750 4850 9750 4650
-Connection ~ 9750 4650
-Wire Wire Line
-	9750 4650 9800 4650
-Wire Wire Line
-	9800 4950 9750 4950
-Wire Wire Line
-	9750 4950 9750 5200
-Connection ~ 9750 5200
-Wire Wire Line
-	9750 5200 9800 5200
+	9150 5200 9250 5200
 $Comp
 L extras:MBI6651GSD U?
 U 1 1 5C1ACF76
@@ -1307,7 +1127,7 @@ AR Path="/5C1ACF76" Ref="U?"  Part="1"
 AR Path="/5C0A300C/5C1ACF76" Ref="U6"  Part="1" 
 F 0 "U6" H 8000 5065 50  0000 C CNN
 F 1 "MBI6651GSD" H 8000 4974 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-5_TabPin6" H 8150 4950 50  0001 C CNN
+F 2 "extras:TO-252-5L" H 8150 4950 50  0001 C CNN
 F 3 "" H 8150 4950 50  0001 C CNN
 F 4 "MBI6651GSD-A" H 7750 4900 50  0001 C CNN "partnum"
 	1    7750 4900
@@ -2039,4 +1859,380 @@ Wire Wire Line
 Connection ~ 6400 2600
 Wire Wire Line
 	6400 2600 7650 2600
+Wire Wire Line
+	4450 4900 4450 5200
+Connection ~ 4450 5200
+Wire Wire Line
+	4450 2300 4450 2600
+Connection ~ 4450 2600
+Wire Wire Line
+	9250 2300 9250 2600
+Connection ~ 9250 2600
+Wire Wire Line
+	9250 4900 9250 5200
+Connection ~ 9250 5200
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C4B61A3
+P 5200 2800
+AR Path="/5BC4A73F/5C4B61A3" Ref="J?"  Part="1" 
+AR Path="/5C4B61A3" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C4B61A3" Ref="J51"  Part="1" 
+F 0 "J51" H 5280 2842 50  0000 L CNN
+F 1 "Pin" H 5280 2751 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5200 2800 50  0001 C CNN
+F 3 "~" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2800 4600 2800
+Text Label 4650 2800 0    50   ~ 0
+RSV-12
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C4E4E54
+P 5200 5400
+AR Path="/5BC4A73F/5C4E4E54" Ref="J?"  Part="1" 
+AR Path="/5C4E4E54" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C4E4E54" Ref="J53"  Part="1" 
+F 0 "J53" H 5280 5442 50  0000 L CNN
+F 1 "Pin" H 5280 5351 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5200 5400 50  0001 C CNN
+F 3 "~" H 5200 5400 50  0001 C CNN
+	1    5200 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5400 4600 5400
+Text Label 4650 5400 0    50   ~ 0
+RSV-32
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C4FCC6D
+P 10000 2800
+AR Path="/5BC4A73F/5C4FCC6D" Ref="J?"  Part="1" 
+AR Path="/5C4FCC6D" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C4FCC6D" Ref="J52"  Part="1" 
+F 0 "J52" H 10080 2842 50  0000 L CNN
+F 1 "Pin" H 10080 2751 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10000 2800 50  0001 C CNN
+F 3 "~" H 10000 2800 50  0001 C CNN
+	1    10000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2800 9400 2800
+Text Label 9450 2800 0    50   ~ 0
+RSV-22
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C51423F
+P 10000 5400
+AR Path="/5BC4A73F/5C51423F" Ref="J?"  Part="1" 
+AR Path="/5C51423F" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C51423F" Ref="J54"  Part="1" 
+F 0 "J54" H 10080 5442 50  0000 L CNN
+F 1 "Pin" H 10080 5351 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10000 5400 50  0001 C CNN
+F 3 "~" H 10000 5400 50  0001 C CNN
+	1    10000 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5400 9400 5400
+Text Label 9450 5400 0    50   ~ 0
+RSV-42
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C53257A
+P 1350 1550
+AR Path="/5BC4A73F/5C53257A" Ref="J?"  Part="1" 
+AR Path="/5C53257A" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C53257A" Ref="J55"  Part="1" 
+F 0 "J55" H 1430 1592 50  0000 L CNN
+F 1 "Pin" H 1430 1501 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 1350 1550 50  0001 C CNN
+F 3 "~" H 1350 1550 50  0001 C CNN
+	1    1350 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 1550 1950 1550
+Text Label 1600 1550 0    50   ~ 0
+RSV-11
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C562B6C
+P 5200 3000
+AR Path="/5BC4A73F/5C562B6C" Ref="J?"  Part="1" 
+AR Path="/5C562B6C" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C562B6C" Ref="J57"  Part="1" 
+F 0 "J57" H 5280 3042 50  0000 L CNN
+F 1 "Pin" H 5280 2951 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5200 3000 50  0001 C CNN
+F 3 "~" H 5200 3000 50  0001 C CNN
+	1    5200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3000 4600 3000
+Text Label 4650 3000 0    50   ~ 0
+RSV-13
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C57C0E0
+P 10000 3000
+AR Path="/5BC4A73F/5C57C0E0" Ref="J?"  Part="1" 
+AR Path="/5C57C0E0" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C57C0E0" Ref="J58"  Part="1" 
+F 0 "J58" H 10080 3042 50  0000 L CNN
+F 1 "Pin" H 10080 2951 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10000 3000 50  0001 C CNN
+F 3 "~" H 10000 3000 50  0001 C CNN
+	1    10000 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3000 9400 3000
+Text Label 9450 3000 0    50   ~ 0
+RSV-23
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C595595
+P 6150 1850
+AR Path="/5BC4A73F/5C595595" Ref="J?"  Part="1" 
+AR Path="/5C595595" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C595595" Ref="J56"  Part="1" 
+F 0 "J56" H 6230 1892 50  0000 L CNN
+F 1 "Pin" H 6230 1801 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6150 1850 50  0001 C CNN
+F 3 "~" H 6150 1850 50  0001 C CNN
+	1    6150 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 1850 6750 1850
+Text Label 6400 1850 0    50   ~ 0
+RSV-21
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C5B1B7D
+P 1350 4450
+AR Path="/5BC4A73F/5C5B1B7D" Ref="J?"  Part="1" 
+AR Path="/5C5B1B7D" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C5B1B7D" Ref="J59"  Part="1" 
+F 0 "J59" H 1430 4492 50  0000 L CNN
+F 1 "Pin" H 1430 4401 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 1350 4450 50  0001 C CNN
+F 3 "~" H 1350 4450 50  0001 C CNN
+	1    1350 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1550 4450 1950 4450
+Text Label 1600 4450 0    50   ~ 0
+RSV-31
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C5CB85A
+P 5200 5600
+AR Path="/5BC4A73F/5C5CB85A" Ref="J?"  Part="1" 
+AR Path="/5C5CB85A" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C5CB85A" Ref="J61"  Part="1" 
+F 0 "J61" H 5280 5642 50  0000 L CNN
+F 1 "Pin" H 5280 5551 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5200 5600 50  0001 C CNN
+F 3 "~" H 5200 5600 50  0001 C CNN
+	1    5200 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5600 4600 5600
+Text Label 4650 5600 0    50   ~ 0
+RSV-33
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C5E56D0
+P 10000 5600
+AR Path="/5BC4A73F/5C5E56D0" Ref="J?"  Part="1" 
+AR Path="/5C5E56D0" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C5E56D0" Ref="J62"  Part="1" 
+F 0 "J62" H 10080 5642 50  0000 L CNN
+F 1 "Pin" H 10080 5551 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10000 5600 50  0001 C CNN
+F 3 "~" H 10000 5600 50  0001 C CNN
+	1    10000 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5600 9400 5600
+Text Label 9450 5600 0    50   ~ 0
+RSV-43
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 5C5FEE90
+P 6150 4450
+AR Path="/5BC4A73F/5C5FEE90" Ref="J?"  Part="1" 
+AR Path="/5C5FEE90" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C5FEE90" Ref="J60"  Part="1" 
+F 0 "J60" H 6230 4492 50  0000 L CNN
+F 1 "Pin" H 6230 4401 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6150 4450 50  0001 C CNN
+F 3 "~" H 6150 4450 50  0001 C CNN
+	1    6150 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 4450 6750 4450
+Text Label 6400 4450 0    50   ~ 0
+RSV-41
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5C471BE0
+P 5650 2300
+AR Path="/5BC5F278/5C471BE0" Ref="J?"  Part="1" 
+AR Path="/5BC4A73F/5C471BE0" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C471BE0" Ref="J20"  Part="1" 
+F 0 "J20" H 5570 2617 50  0000 C CNN
+F 1 "TB-03" H 5570 2526 50  0000 C CNN
+F 2 "extras:TB-03_metric" H 5650 2300 50  0001 C CNN
+F 3 "~" H 5650 2300 50  0001 C CNN
+F 4 "TB-03" H 5650 2300 50  0001 C CNN "partnum"
+	1    5650 2300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4450 2050 4950 2050
+Wire Wire Line
+	4450 2600 4950 2600
+Wire Wire Line
+	5450 2200 4950 2200
+Wire Wire Line
+	4950 2200 4950 2050
+Connection ~ 4950 2050
+Wire Wire Line
+	4950 2050 5000 2050
+Wire Wire Line
+	5450 2400 4950 2400
+Wire Wire Line
+	4950 2400 4950 2600
+Connection ~ 4950 2600
+Wire Wire Line
+	4950 2600 5000 2600
+Wire Wire Line
+	5450 2300 4950 2300
+Text Label 5050 2300 0    50   ~ 0
+RSV-12
+Wire Wire Line
+	9250 2050 9750 2050
+Wire Wire Line
+	9250 2600 9750 2600
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5C5B8853
+P 10450 2300
+AR Path="/5BC5F278/5C5B8853" Ref="J?"  Part="1" 
+AR Path="/5BC4A73F/5C5B8853" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C5B8853" Ref="J21"  Part="1" 
+F 0 "J21" H 10370 2617 50  0000 C CNN
+F 1 "TB-03" H 10370 2526 50  0000 C CNN
+F 2 "extras:TB-03_metric" H 10450 2300 50  0001 C CNN
+F 3 "~" H 10450 2300 50  0001 C CNN
+F 4 "TB-03" H 10450 2300 50  0001 C CNN "partnum"
+	1    10450 2300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10250 2200 9750 2200
+Wire Wire Line
+	10250 2400 9750 2400
+Wire Wire Line
+	10250 2300 9750 2300
+Wire Wire Line
+	9750 2600 9750 2400
+Connection ~ 9750 2600
+Wire Wire Line
+	9750 2600 9800 2600
+Wire Wire Line
+	9750 2200 9750 2050
+Connection ~ 9750 2050
+Wire Wire Line
+	9750 2050 9800 2050
+Text Label 9850 2300 0    50   ~ 0
+RSV-22
+Wire Wire Line
+	4450 4650 4950 4650
+Wire Wire Line
+	4450 5200 4950 5200
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5C61DE99
+P 5650 4900
+AR Path="/5BC5F278/5C61DE99" Ref="J?"  Part="1" 
+AR Path="/5BC4A73F/5C61DE99" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C61DE99" Ref="J34"  Part="1" 
+F 0 "J34" H 5570 5217 50  0000 C CNN
+F 1 "TB-03" H 5570 5126 50  0000 C CNN
+F 2 "extras:TB-03_metric" H 5650 4900 50  0001 C CNN
+F 3 "~" H 5650 4900 50  0001 C CNN
+F 4 "TB-03" H 5650 4900 50  0001 C CNN "partnum"
+	1    5650 4900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5450 4800 4950 4800
+Wire Wire Line
+	5450 5000 4950 5000
+Wire Wire Line
+	5450 4900 4950 4900
+Wire Wire Line
+	4950 4800 4950 4650
+Connection ~ 4950 4650
+Wire Wire Line
+	4950 4650 5000 4650
+Wire Wire Line
+	4950 5000 4950 5200
+Connection ~ 4950 5200
+Wire Wire Line
+	4950 5200 5000 5200
+Text Label 5050 4900 0    50   ~ 0
+RSV-32
+Wire Wire Line
+	9250 4650 9750 4650
+Wire Wire Line
+	9250 5200 9750 5200
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 5C682C9A
+P 10450 4900
+AR Path="/5BC5F278/5C682C9A" Ref="J?"  Part="1" 
+AR Path="/5BC4A73F/5C682C9A" Ref="J?"  Part="1" 
+AR Path="/5C0A300C/5C682C9A" Ref="J35"  Part="1" 
+F 0 "J35" H 10370 5217 50  0000 C CNN
+F 1 "TB-03" H 10370 5126 50  0000 C CNN
+F 2 "extras:TB-03_metric" H 10450 4900 50  0001 C CNN
+F 3 "~" H 10450 4900 50  0001 C CNN
+F 4 "TB-03" H 10450 4900 50  0001 C CNN "partnum"
+	1    10450 4900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10250 4800 9750 4800
+Wire Wire Line
+	10250 5000 9750 5000
+Wire Wire Line
+	10250 4900 9750 4900
+Wire Wire Line
+	9750 4800 9750 4650
+Connection ~ 9750 4650
+Wire Wire Line
+	9750 4650 9800 4650
+Wire Wire Line
+	9750 5000 9750 5200
+Connection ~ 9750 5200
+Wire Wire Line
+	9750 5200 9800 5200
+Text Label 9850 4900 0    50   ~ 0
+RSV-42
 $EndSCHEMATC

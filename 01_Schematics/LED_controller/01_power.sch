@@ -25,18 +25,6 @@ F 3 "http://www.onsemi.com/pub_link/Collateral/MC34063A-D.PDF" H 5500 2300 50  0
 	1    5000 2400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Diode:1N5819 D1
-U 1 1 5BC4A972
-P 6300 2850
-F 0 "D1" H 6300 3066 50  0000 C CNN
-F 1 "1N5819" H 6300 2975 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6300 2675 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 6300 2850 50  0001 C CNN
-F 4 "1N5819" H 6300 2850 50  0001 C CNN "partnum"
-	1    6300 2850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5400 2600 5750 2600
 Wire Wire Line
@@ -292,7 +280,7 @@ F 3 "" H 4200 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 2300 4200 2200
-Text GLabel 2550 1650 0    50   Input ~ 0
+Text GLabel 2550 1550 0    50   Input ~ 0
 Vin
 $Comp
 L Device:R_Small R3
@@ -339,7 +327,7 @@ Wire Wire Line
 	2800 3100 3000 3100
 Wire Wire Line
 	3000 3100 3000 2850
-Text Label 2650 1650 0    50   ~ 0
+Text Label 2650 1550 0    50   ~ 0
 Vin
 Text Label 7450 2600 0    50   ~ 0
 +3.3V
@@ -513,12 +501,12 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x01 J1
 U 1 1 5C07DF1D
-P 2450 1800
-F 0 "J1" H 2530 1842 50  0000 L CNN
-F 1 "Pin" H 2530 1751 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2450 1800 50  0001 C CNN
-F 3 "~" H 2450 1800 50  0001 C CNN
-	1    2450 1800
+P 2450 1700
+F 0 "J1" H 2530 1742 50  0000 L CNN
+F 1 "Pin" H 2530 1651 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2450 1700 50  0001 C CNN
+F 3 "~" H 2450 1700 50  0001 C CNN
+	1    2450 1700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -606,7 +594,7 @@ U 1 1 5C0B87FF
 P 3050 2200
 F 0 "F1" V 3247 2200 50  0000 C CNN
 F 1 "Fuse" V 3156 2200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2980 2200 50  0001 C CNN
+F 2 "extras:MF-R185" V 2980 2200 50  0001 C CNN
 F 3 "~" H 3050 2200 50  0001 C CNN
 F 4 "MF-R090" V 3050 2200 50  0001 C CNN "partnum"
 	1    3050 2200
@@ -616,17 +604,12 @@ Wire Wire Line
 	3200 2200 3300 2200
 Connection ~ 3300 2200
 Wire Wire Line
-	2800 2200 2800 1800
+	2550 1550 2800 1550
 Wire Wire Line
-	2550 1650 2800 1650
-Connection ~ 2800 2200
+	2650 1700 2800 1700
+Connection ~ 2800 1700
 Wire Wire Line
-	2800 2200 2900 2200
-Wire Wire Line
-	2650 1800 2800 1800
-Connection ~ 2800 1800
-Wire Wire Line
-	2800 1800 2800 1650
+	2800 1700 2800 1550
 $Comp
 L Connector:Screw_Terminal_01x01 J2
 U 1 1 5C2642E1
@@ -653,7 +636,7 @@ F 4 "RC2010JK-070RL" V 7750 1800 50  0001 C CNN "partnum"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7250 1800 7650 1800
+	7250 1800 7500 1800
 Text Label 7350 1800 0    50   ~ 0
 Vin
 Text GLabel 8100 1650 2    50   Input ~ 0
@@ -722,23 +705,19 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x03 J?
 U 1 1 5C1457E9
-P 2350 2300
+P 2000 2300
 AR Path="/5BC5F278/5C1457E9" Ref="J?"  Part="1" 
 AR Path="/5BC4A73F/5C1457E9" Ref="J3"  Part="1" 
-F 0 "J3" H 2270 2617 50  0000 C CNN
-F 1 "TB-03" H 2270 2526 50  0000 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 2350 2300 50  0001 C CNN
-F 3 "~" H 2350 2300 50  0001 C CNN
-F 4 "TB-03" H 2350 2300 50  0001 C CNN "partnum"
-	1    2350 2300
-	-1   0    0    -1  
+F 0 "J3" H 1920 2617 50  0000 C CNN
+F 1 "TB-03" H 1920 2526 50  0000 C CNN
+F 2 "extras:TB-03_metric" H 2000 2300 50  0001 C CNN
+F 3 "~" H 2000 2300 50  0001 C CNN
+F 4 "TB-03" H 2000 2300 50  0001 C CNN "partnum"
+	1    2000 2300
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2750 2700 2750 2750
-Wire Wire Line
-	2550 2400 2750 2400
-Wire Wire Line
-	2550 2200 2800 2200
 $Comp
 L Connector:Screw_Terminal_01x01 J49
 U 1 1 5C156CFC
@@ -751,7 +730,177 @@ F 3 "~" H 3050 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 2550 2850 2300
+	2850 2550 2850 2400
+$Comp
+L Connector:Screw_Terminal_01x01 J50
+U 1 1 5C361FAC
+P 2000 2750
+F 0 "J50" H 2080 2792 50  0000 L CNN
+F 1 "Pin" H 2080 2701 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2000 2750 50  0001 C CNN
+F 3 "~" H 2000 2750 50  0001 C CNN
+	1    2000 2750
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	2850 2300 2550 2300
+	2200 2750 2250 2750
+Wire Wire Line
+	2250 2750 2250 2400
+Wire Wire Line
+	2800 1700 2800 1850
+Connection ~ 2800 2200
+Wire Wire Line
+	2800 2200 2900 2200
+$Comp
+L Connector:Screw_Terminal_01x01 J63
+U 1 1 5C6D49C8
+P 2450 1850
+F 0 "J63" H 2530 1892 50  0000 L CNN
+F 1 "Pin" H 2530 1801 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2450 1850 50  0001 C CNN
+F 3 "~" H 2450 1850 50  0001 C CNN
+	1    2450 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 1850 2800 1850
+Connection ~ 2800 1850
+Wire Wire Line
+	2800 1850 2800 2200
+$Comp
+L Connector:Screw_Terminal_01x01 J64
+U 1 1 5C6D7C95
+P 2000 2900
+F 0 "J64" H 2080 2942 50  0000 L CNN
+F 1 "Pin" H 2080 2851 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 2000 2900 50  0001 C CNN
+F 3 "~" H 2000 2900 50  0001 C CNN
+	1    2000 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 2900 2250 2900
+Wire Wire Line
+	2250 2900 2250 2750
+Connection ~ 2250 2750
+$Comp
+L Connector:Screw_Terminal_01x01 J65
+U 1 1 5C6DE591
+P 3050 2400
+F 0 "J65" H 3130 2442 50  0000 L CNN
+F 1 "Pin" H 3130 2351 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 3050 2400 50  0001 C CNN
+F 3 "~" H 3050 2400 50  0001 C CNN
+	1    3050 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2850 2400
+Wire Wire Line
+	2850 2400 2850 2300
+$Comp
+L Connector:Screw_Terminal_01x01 J66
+U 1 1 5C6EC81E
+P 8250 1950
+F 0 "J66" H 8330 1992 50  0000 L CNN
+F 1 "Pin" H 8330 1901 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8250 1950 50  0001 C CNN
+F 3 "~" H 8250 1950 50  0001 C CNN
+	1    8250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1950 7950 1950
+Wire Wire Line
+	7950 1950 7950 1800
+Wire Wire Line
+	2200 2400 2250 2400
+Wire Wire Line
+	2200 2300 2850 2300
+Wire Wire Line
+	2200 2200 2800 2200
+$Comp
+L Diode:B240 D?
+U 1 1 5C49EDA2
+P 6300 2850
+AR Path="/5C49EDA2" Ref="D?"  Part="1" 
+AR Path="/5C0A300C/5C49EDA2" Ref="D?"  Part="1" 
+AR Path="/5BC4A73F/5C49EDA2" Ref="D1"  Part="1" 
+F 0 "D1" H 6300 3066 50  0000 C CNN
+F 1 "B240" H 6300 2975 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 6300 2675 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 6300 2850 50  0001 C CNN
+	1    6300 2850
+	0    1    1    0   
+$EndComp
+Connection ~ 2250 2400
+Wire Wire Line
+	2250 2400 2500 2400
+$Comp
+L power:GNDD #PWR030
+U 1 1 5C4AEBA5
+P 2500 2750
+F 0 "#PWR030" H 2500 2500 50  0001 C CNN
+F 1 "GNDD" H 2504 2595 50  0000 C CNN
+F 2 "" H 2500 2750 50  0001 C CNN
+F 3 "" H 2500 2750 50  0001 C CNN
+	1    2500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R12
+U 1 1 5C4AEBAC
+P 2500 2600
+F 0 "R12" V 2696 2600 50  0000 C CNN
+F 1 "0R" V 2605 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2500 2600 50  0001 C CNN
+F 3 "~" H 2500 2600 50  0001 C CNN
+F 4 "RC2010JK-070RL" V 2500 2600 50  0001 C CNN "partnum"
+	1    2500 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 2400 2500 2500
+Wire Wire Line
+	2500 2700 2500 2750
+Connection ~ 2500 2400
+Wire Wire Line
+	2500 2400 2750 2400
+$Comp
+L Device:R_Small R8
+U 1 1 5C4B27D6
+P 7750 1950
+F 0 "R8" V 7946 1950 50  0000 C CNN
+F 1 "0R" V 7855 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7750 1950 50  0001 C CNN
+F 3 "~" H 7750 1950 50  0001 C CNN
+F 4 "RC2010JK-070RL" V 7750 1950 50  0001 C CNN "partnum"
+	1    7750 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 1950 7850 1950
+Wire Wire Line
+	7650 1950 7500 1950
+Wire Wire Line
+	7500 1950 7500 1800
+Connection ~ 7500 1800
+Wire Wire Line
+	7500 1800 7650 1800
+Connection ~ 7950 1950
+$Comp
+L Connector:Screw_Terminal_01x01 J7-2
+U 1 1 5C656B95
+P 6250 4550
+F 0 "J7-2" H 6330 4592 50  0000 L CNN
+F 1 "Pin" H 6330 4501 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6250 4550 50  0001 C CNN
+F 3 "~" H 6250 4550 50  0001 C CNN
+	1    6250 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4550 5900 4550
+Wire Wire Line
+	5900 4550 5900 4350
+Connection ~ 5900 4350
 $EndSCHEMATC

@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
-Title ""
-Date ""
+Title "LED controller"
+Date "2019-01-09"
 Rev ""
-Comp ""
+Comp "Engineering Bay"
 Comment1 ""
 Comment2 ""
 Comment3 ""

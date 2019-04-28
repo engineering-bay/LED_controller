@@ -127,107 +127,6 @@ Wire Wire Line
 Connection ~ 2450 1350
 Wire Wire Line
 	2450 1350 2100 1350
-$Comp
-L Device:C_Small C?
-U 1 1 5C0C52B9
-P 3150 1500
-AR Path="/5BC4A73F/5C0C52B9" Ref="C?"  Part="1" 
-AR Path="/5C0A4424/5C0C52B9" Ref="C20"  Part="1" 
-F 0 "C20" H 3242 1546 50  0000 L CNN
-F 1 "0.01uF" H 3242 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3150 1500 50  0001 C CNN
-F 3 "~" H 3150 1500 50  0001 C CNN
-F 4 "CC0805JRNPO9BN103" H 3150 1500 50  0001 C CNN "partnum"
-	1    3150 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 1400 3150 1350
-$Comp
-L power:GNDD #PWR?
-U 1 1 5C0C52C1
-P 3150 1650
-AR Path="/5BC4A73F/5C0C52C1" Ref="#PWR?"  Part="1" 
-AR Path="/5C0A4424/5C0C52C1" Ref="#PWR050"  Part="1" 
-F 0 "#PWR050" H 3150 1400 50  0001 C CNN
-F 1 "GNDD" H 3154 1495 50  0000 C CNN
-F 2 "" H 3150 1650 50  0001 C CNN
-F 3 "" H 3150 1650 50  0001 C CNN
-	1    3150 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 1600 3150 1650
-$Comp
-L Device:C_Small C?
-U 1 1 5C0C5AEC
-P 3550 1500
-AR Path="/5BC4A73F/5C0C5AEC" Ref="C?"  Part="1" 
-AR Path="/5C0A4424/5C0C5AEC" Ref="C21"  Part="1" 
-F 0 "C21" H 3642 1546 50  0000 L CNN
-F 1 "0.01uF" H 3642 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3550 1500 50  0001 C CNN
-F 3 "~" H 3550 1500 50  0001 C CNN
-F 4 "CC0805JRNPO9BN103" H 3550 1500 50  0001 C CNN "partnum"
-	1    3550 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 1400 3550 1350
-$Comp
-L power:GNDD #PWR?
-U 1 1 5C0C5AF4
-P 3550 1650
-AR Path="/5BC4A73F/5C0C5AF4" Ref="#PWR?"  Part="1" 
-AR Path="/5C0A4424/5C0C5AF4" Ref="#PWR051"  Part="1" 
-F 0 "#PWR051" H 3550 1400 50  0001 C CNN
-F 1 "GNDD" H 3554 1495 50  0000 C CNN
-F 2 "" H 3550 1650 50  0001 C CNN
-F 3 "" H 3550 1650 50  0001 C CNN
-	1    3550 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 1600 3550 1650
-$Comp
-L Device:C_Small C?
-U 1 1 5C0C5CED
-P 3900 1500
-AR Path="/5BC4A73F/5C0C5CED" Ref="C?"  Part="1" 
-AR Path="/5C0A4424/5C0C5CED" Ref="C22"  Part="1" 
-F 0 "C22" H 3992 1546 50  0000 L CNN
-F 1 "0.01uF" H 3992 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3900 1500 50  0001 C CNN
-F 3 "~" H 3900 1500 50  0001 C CNN
-F 4 "CC0805JRNPO9BN103" H 3900 1500 50  0001 C CNN "partnum"
-	1    3900 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 1400 3900 1350
-$Comp
-L power:GNDD #PWR?
-U 1 1 5C0C5CF5
-P 3900 1650
-AR Path="/5BC4A73F/5C0C5CF5" Ref="#PWR?"  Part="1" 
-AR Path="/5C0A4424/5C0C5CF5" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 3900 1400 50  0001 C CNN
-F 1 "GNDD" H 3904 1495 50  0000 C CNN
-F 2 "" H 3900 1650 50  0001 C CNN
-F 3 "" H 3900 1650 50  0001 C CNN
-	1    3900 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 1600 3900 1650
-Wire Wire Line
-	2800 1350 3150 1350
-Connection ~ 3150 1350
-Wire Wire Line
-	3150 1350 3550 1350
-Connection ~ 3550 1350
-Wire Wire Line
-	3550 1350 3900 1350
 Wire Wire Line
 	2000 1350 2100 1350
 Connection ~ 2100 1350
@@ -251,9 +150,6 @@ Text Label 1400 1350 0    50   ~ 0
 +3.3V
 Text Label 2550 1350 0    50   ~ 0
 Vdd
-Wire Wire Line
-	5250 1350 3900 1350
-Connection ~ 3900 1350
 $Comp
 L Interface_Ethernet:DP83848C U7
 U 1 1 5C0C4487
@@ -562,27 +458,12 @@ Wire Wire Line
 Wire Wire Line
 	3100 2850 3550 2850
 $Comp
-L Connector:TestPoint TP1
-U 1 1 5C2F5A38
-P 3350 4400
-F 0 "TP1" H 3408 4474 50  0000 L CNN
-F 1 "TestPoint" H 3408 4429 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 3550 4400 50  0001 C CNN
-F 3 "~" H 3550 4400 50  0001 C CNN
-	1    3350 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 4450 3350 4450
-Wire Wire Line
-	3350 4450 3350 4400
-$Comp
 L Connector:RJ45_LED_Shielded J42
 U 1 1 5C2F8C1D
 P 9100 2450
 F 0 "J42" H 9100 3117 50  0000 C CNN
 F 1 "RJ45_LED_Shielded" H 9100 3026 50  0000 C CNN
-F 2 "Connector_RJ:RJ45_Cetus_J1B1211CCD_Horizontal" V 9100 2475 50  0001 C CNN
+F 2 "extras:Hanrun_HR9111105A" V 9100 2475 50  0001 C CNN
 F 3 "~" V 9100 2475 50  0001 C CNN
 F 4 "HR911105A" H 9100 2450 50  0001 C CNN "partnum"
 	1    9100 2450
@@ -1294,4 +1175,17 @@ Wire Wire Line
 	2250 4800 2250 4650
 Wire Wire Line
 	2250 5100 2250 4950
+Text Label 6650 2850 0    50   ~ 0
+ETH_RD_P
+Text Label 6650 2950 0    50   ~ 0
+ETH_RD_N
+Wire Wire Line
+	2800 1350 5250 1350
+NoConn ~ 8700 2750
+NoConn ~ 4350 2550
+NoConn ~ 4350 3050
+NoConn ~ 4350 3150
+NoConn ~ 4350 3250
+NoConn ~ 4350 3450
+NoConn ~ 4350 4750
 $EndSCHEMATC

@@ -531,6 +531,7 @@ F 0 "U8" H 6450 1414 50  0000 C CNN
 F 1 "STM32F107RCTx" H 6450 1323 50  0000 C CNN
 F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5850 1600 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00220364.pdf" H 6450 3300 50  0001 C CNN
+F 4 "STM32F107RCTx" H 6450 3300 50  0001 C CNN "partnum"
 	1    6450 3300
 	1    0    0    -1  
 $EndComp
